@@ -1,20 +1,17 @@
-class Student(studentId: Int, studentName: String, courseName: String, studentMark: Double) {
+class Student(protected val studentId: Int, protected var name: String,  protected val courseName: String, protected var studentMark: Double) {
 
     // Properties (attributes)
 
-    val id: Int
-    val name: String
+
     val course: String
     var mark: Double
 
     init {
-        id = studentId
-        name = studentName
         course = courseName
         mark = studentMark
     }
     override fun toString() : String {
-        return "student Id: $id Name: $name Course Name: $course student mark: $mark"
+        return "student Id: $studentId Name: $name Course Name: $course student mark: $mark"
     }
     fun getGrade() : String {
         val degree = when(mark) {
