@@ -6,6 +6,7 @@ class Student(studentId: Int, studentName: String, courseName: String, studentMa
     val name: String
     val course: String
     var mark: Double
+
     init {
         id = studentId
         name = studentName
@@ -34,4 +35,5 @@ class Student(studentId: Int, studentName: String, courseName: String, studentMa
         }
         return false
     }
+
 }
