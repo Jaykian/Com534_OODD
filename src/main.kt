@@ -1,9 +1,6 @@
 fun main()
 {
-  val bob =Cat("bob",5,19)
+  val jay =Student(1,"Jay","DTS",70.0)
 
-  bob.walk(4)
-  bob.eat(6)
-
-  println(bob)
+  print(jay.getGrade())
 }
