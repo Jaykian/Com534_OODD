@@ -14,10 +14,10 @@ class Cat (nameIn: String, ageIn: Int, weightIn: Int) {
     fun walk(walkDis: Int) {
         weight -= walkDis
     }
-    fun eat(): Boolean
+    fun eat(eatAmt: Int): Boolean
     {
         if (weight <= 19) {
-            weight ++
+            weight += eatAmt
             return true
         }
         return false
