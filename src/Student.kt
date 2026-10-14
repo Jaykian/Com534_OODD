@@ -26,4 +26,12 @@ class Student(studentId: Int, studentName: String, courseName: String, studentMa
         }
         return degree
     }
+
+    fun didPass(): Boolean
+    {
+        if(mark > 40.0) {
+            return true
+        }
+        return false
+    }
 }
